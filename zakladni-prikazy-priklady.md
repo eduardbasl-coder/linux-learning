@@ -220,3 +220,40 @@ root@rasberrypi:/home/user$ rmdir Videos
 root@rasberrypi:/home/user$ ls
 Pictures Documents dalsidokument.docx dokument.txt GitHub              *uz tu Videos neni
 ```
+
+## 📄echo (remove directory)
+
+**Definice:**
+Vypíše text do terminálu/vloží text do souboru
+
+**Poznámka:**
+Pokud chceš něco vypsat do terminálu nebo pokud chceš bez otevření přidat text do souboru
+
+**Příklady:**
+1. Chceš vypsat "Ahoj světe" do terminálu
+```bash
+root@rasberrypi:/home/user$ echo "Ahoj světe"
+Ahoj světe
+```
+2. Chceš vložit text do souboru (přeprat celý soubor)
+```bash
+root@rasberrypi:/home/user/documents$ ls
+secret.mb
+root@rasberrypi:/home/user/documents$ cat secret.mb                *vypíše obsah souboru secret.mb
+Super, naučil jsi se nový příkaz!
+root@rasberrypi:/home/user/documents$ echo "Toto je nový text, už žádná pochvala" > secret.mb          *přepíše celý soubor na zadaný text  (pozor, rozdíl mezi > & >>)
+root@rasberrypi:/home/user/documents$ cat secret.mb              *vypíše obsah přepsaného souboru secret.mb
+Toto je nový text, už žádná pochvala                              *obsah přepsaného souboru secret.mb
+```
+3. Chceš vložit text do souboru (na konec souboru na další řádek)
+```bash
+root@rasberrypi:/home/user/documents$ ls
+secret.mb
+root@rasberrypi:/home/user/documents$ cat secret.mb                *vypíše obsah souboru secret.mb (ted uz zmeneny)
+Toto je nový text, už žádná pochvala
+root@rasberrypi:/home/user/documents$ echo "To ale neznamená, že se máš přestat učit!!" >> secret.mb          *vpíše na konec souboru zadaný text  (pozor, rozdíl mezi > & >>)
+root@rasberrypi:/home/user/documents$ cat secret.mb              *vypíše obsah upraveného souboru secret.mb
+Toto je nový text, už žádná pochvala
+To ale neznamená, že se máš přestat učit!                          *obsah upraveného souboru secret.mb
+```
+
