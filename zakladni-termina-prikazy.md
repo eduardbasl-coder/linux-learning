@@ -17,3 +17,13 @@
 | echo "Hello world!" | vypíše text | Hello world! |
 | sudo | spustí jako root | |
 | sudo apt install nazev | nainstaluje aplikaci | |
+| clear | vyčistí terminál | |
+| history | zobrazí historii příkazů | |
+| man NAZEV | zobrazí manuál k příkazu | |
+| grep TEXT SOUBOR | najde TEXT v souboru SOUBOR| |
+| id | vypíše informace o uživateli systému | uid=1000(eduard) gid=1000(eduard) groups=1000(eduard),27(sudo) |
+| whoami | vypíše pouze uživatelské jméno uživatele | eduard |
+| top | zobrazí běžící procesy | |
+| htop | lepší verze příkazu top | instalace: sudo apt install htop |
+| ps aux | vypíše do terminálu všechny procesy | root 1  0.3  0.0  21664 12396 ? Ss   17:43   0:00 /sbin/init |
+| df -h | ukáže místo na disku | C:\ 932G  270G  663G  29% /mnt/c |
