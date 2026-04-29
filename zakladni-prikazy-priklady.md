@@ -166,3 +166,57 @@ root@rasberrypi:/home/user$ ls
 Pictures  Videos  Documents dalsidokument.docx dokument.txt     *ale tady už je(sem jsme ho přesunuli)
 ```
 
+## 📂rm (remove)
+
+**Definice:**
+Odstraní soubor
+
+**Poznámka:**
+Nejjednodušší cesta smazání souborů (občas potřeba kombinase se sudo)
+
+**Příklady:**
+Chceš odstranit dalsidokument.docx z documents
+```bash
+root@rasberrypi:/home/user/documents$ ls
+secret.mb dalsidokument.docx
+root@rasberrypi:/home/user/documents$ rm dalsidokument.docx
+root@rasberrypi:/home/user/documents$ ls
+secret.mb
+```
+
+## 📂mkdir (make directory)
+
+**Definice:**
+Vytvoří novou složku
+
+**Poznámka:**
+Nejjednodušší cesta k vytvoření nové složky (občas potřeba kombinase se sudo)
+
+**Příklady:**
+Chceš vytvořit novou složku v user
+```bash
+root@rasberrypi:/home/user/documents$ cd ..
+root@rasberrypi:/home/user$ ls
+Pictures Videos  Documents dalsidokument.docx dokument.txt
+root@rasberrypi:/home/user$ mkdir GitHub                        *vytvoří novou složku GitHub
+root@rasberrypi:/home/user$ ls
+Pictures  Videos  Documents dalsidokument.docx dokument.txt GitHub
+```
+
+## 📂rmdir (remove directory)
+
+**Definice:**
+Odstraní složku
+
+**Poznámka:**
+Nejjednodušší cesta smazání složky (občas potřeba kombinase se sudo)
+
+**Příklady:**
+Chceš odstranit složku Videos z user
+```bash
+root@rasberrypi:/home/user$ ls
+Pictures Videos  Documents dalsidokument.docx dokument.txt GitHub
+root@rasberrypi:/home/user$ rmdir Videos
+root@rasberrypi:/home/user$ ls
+Pictures Documents dalsidokument.docx dokument.txt GitHub              *uz tu Videos neni
+```
