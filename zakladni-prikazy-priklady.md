@@ -1,7 +1,12 @@
-#ls (list)
---
-Definice: vypíše obsah aktuální složky
-Poznámka: jeden ze základních a nejdůležitějších příkazů, používá se pořád
-Příklad:
-root@rasberrypi:/home/user$ ls
-Pictures Videos Documents
+## ls (list)
+
+**Definice:**  
+Vypíše obsah aktuální složky  
+
+**Poznámka:**  
+Jeden ze základních a nejdůležitějších příkazů, používá se pořád  
+
+**Příklad:**
+```bash
+root@raspberrypi:/home/user$ ls
+Pictures  Videos  Documents
