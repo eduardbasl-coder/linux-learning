@@ -5,9 +5,7 @@
 #Příkaz                                                       #Vysvětlení                                                      #Příklad output
 
 ls (list)                                                     vypíše obsah aktuální složky                                      Videos  Photos Work
------
 cd (change directory)                                         změní adresář
------
 cd .. (change directory)                                      skočí o úroveň adresáře zpět
 pwd (print working directory)                                 vypíše aktuální pracovní místo (kde se právě nacházíš)            /user/mnt/usb/kopie
 cat (concatenate)  SOUBOR.txt                                 vypíše obsah souboru SOUBOR.txt
