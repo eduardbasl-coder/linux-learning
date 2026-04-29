@@ -257,3 +257,34 @@ Toto je nový text, už žádná pochvala
 To ale neznamená, že se máš přestat učit!                          *obsah upraveného souboru secret.mb
 ```
 
+## 🔑sudo (root)
+
+**Teorie**
+Pro nekteré akce, např. instalace, aktualizace je potřeba použít přístup root (pomocí příkazu sudo)
+
+**Definice:**
+Umožní spustit administrátorské akce (něco jako na Windows spustit jako zprávce)
+
+**Poznámka:**
+Sudo se používá na začátku příkazu který vyžaduje administrátorské oprávnění (aktualizace, instalace, přístup do systémových souborů)
+
+**Příklady:**
+1. Chceš nainstalovat aktualizace (nainstalované aplikace a balíčky)
+```bash
+root@rasberrypi:/home/user$ sudo apt update                      *zjištění nových balíčků (které jsou dostupné)
+Please enter root pasworld:                                      *zadate root heslo (vaše heslo)
+root@rasberrypi:/home/user$ sudo apt upgrade                     *reálně nainstaluje aktualizace všech nainstalovaných balíčků
+```
+2. Chceš nainstalovat nové aplikace & odistalovat
+```bash
+root@rasberrypi:/home/user$ sudo apt update
+root@rasberrypi:/home/user$ sudo apt upgrade                      *projistotu pred instalací proveď předchozí vec (viz tady) aby to bylo aktuální)
+root@rasberrypi:/home/user$ sudo apt install git                  *nainstaluje Git
+root@rasberrypi:/home/user$ sudo apt install firefox              *nainstaluje prohlížeč firefox
+**Funguje prakticky s čímkoli, případně hledej jak se co instaluje | pokaždé očekávej zadávání Root hesla!**
+```
+
+3. Chceš přístup do systémových souborů
+```bash
+root@rasberrypi:/home/user$ sudo rm /var/log/somefile.log
+```
