@@ -288,3 +288,30 @@ root@rasberrypi:/home/user$ sudo apt install firefox              *nainstaluje p
 ```bash
 root@rasberrypi:/home/user$ sudo rm /var/log/somefile.log
 ```
+
+## 🗑️clear
+
+**Definice:**
+Používá se pro vyčištění terminálu (smaže úplně všechno, jako kdyby jste otevřeli nové okno)
+
+**Poznámka:**
+Používá se pokud chcete začít pracovat na novém projektu nebo když se váš terminál stává nepřehledným a máte zobrazené veci které nepotřebujete
+
+**Příklady:**
+Chceš si vyčistit terminál
+```bash
+**máte proste plnej terminal** (jedno čeho)
+root@raspberrypi:/home/user$ apt update
+root@raspberrypi:/home/user$ apt upgrade
+root@raspberrypi:/home/user$ ls -la
+root@raspberrypi:/home/user$ cd /etc
+root@raspberrypi:/home/user$ cat config.txt
+root@raspberrypi:/home/user$ mkdir test_folder
+root@raspberrypi:/home/user$ rm -rf old_files
+root@raspberrypi:/home/user$ systemctl status ssh
+root@raspberrypi:/home/user$ ping google.com
+root@raspberrypi:/home/user$ reboot
+** a teď prostě dáte clear a všechno se maže a budete znovu na praznym promtu, zkus si sám! **
+root@rasberrypi:/home/user$ clear
+root@rasberrypi:/home/user$ *a tady normálně můžeš psát*
+```
