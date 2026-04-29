@@ -1,7 +1,7 @@
   # Základní příkazy
 
 | Příkaz | Vysvětlení | Příklad output |
-|--------|-----------|----------------|
+|------------|------------------|-------------------------|
 | ls (list) | vypíše obsah aktuální složky | Videos Photos Work |
 | cd (change directory) | změní adresář | |
 | cd .. | skočí o úroveň zpět | |
