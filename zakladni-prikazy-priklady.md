@@ -315,3 +315,18 @@ root@raspberrypi:/home/user$ reboot
 root@rasberrypi:/home/user$ clear
 root@rasberrypi:/home/user$ *a tady normálně můžeš psát*
 ```
+
+## 📜history
+
+**Definice:**
+Používá se pro zobrazení historie všech použitých příkazů v terminálu
+
+**Poznámka:**
+Udělá vám na obrazovku kompletní výpis všech použitých příkazů (pokud linux pouzíváš déle, bude to pár tisíc řádek, kombinuj s clear :) )
+
+**Příklady:**
+Chceš si vypsat historii příkazů z terminálu
+```bash
+root@rasberrypi:/home/user$ history
+
+```
