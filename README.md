@@ -1,6 +1,6 @@
 # 🐧 Linux Learning
 
-Repozitář dokumentující moje učení Linuxu (Ubuntu Server / RasbeeryPi OS)
+Repozitář dokumentující moje učení Linuxu (Ubuntu Server / RasberryPi OS)
 
 ## Co zde najdeš
 - základní příkazy
