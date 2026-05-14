@@ -410,3 +410,19 @@ Potřebuješ zjistit aktuální informace o uživateli
 root@rasberrypi:/home/user$ id
 uid=1000(ed) gid=1000(ed) groups=1000(ed),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users)    **např.
 ```
+
+## ❓whoami
+
+**Definice:**
+Používá se pro zjískání uživatelského jména uživatele
+
+**Poznámka:**
+Pokud potřebuješ zjistit uzivatelské jméno aktuálního uživatele použij tento příkaz
+
+**Příklady:**
+Potřebuješ zjistit uživatelské jméno aktuálního uživatele
+```bash
+root@rasberrypi:/home/user$ whoami
+ed
+```
+
