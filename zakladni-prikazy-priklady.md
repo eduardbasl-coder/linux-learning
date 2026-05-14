@@ -328,5 +328,70 @@ Udělá vám na obrazovku kompletní výpis všech použitých příkazů (pokud
 Chceš si vypsat historii příkazů z terminálu
 ```bash
 root@rasberrypi:/home/user$ history
+  ....
+  555  mv test.rb linux-test.rb
+  556  nano linux-test.rb
+  557  sudo apt install cmatrix
+  558  cmatrix
+  559  sudo apt install cava
+  560  cava
+  561  exit
+  562  cmatrix
+  563  cava
+  564  sudo apt install sl
+  565  sl
+  566  ls
+  567  sl
+  568  sudo apt install glances
+  569  glances
+  570  sudo apt install neofetch
+  571  sl
+  572  neofetcher
+  ....
+```
 
+## 📜MAN
+
+**Definice:**
+Používá se pro zobrazení dokumentace příkazu
+
+**Poznámka:**
+Pokud znáš nějaký příkaz ale nevíš jak ho použít, nebo jsi na linuxu po delší době, tehle příkaz určitě využiješ:)
+
+**Příklady:**
+Potřebuješ zjistit jak se používá příkaz sudo (pokud by jsi to nechápal ode mě)
+```bash
+root@rasberrypi:/home/user$ man sudo
+NAME
+       sudo, sudoedit — execute a command as another user
+
+SYNOPSIS
+       sudo -h | -K | -k | -V
+       sudo -v [-ABkNnS] [-g group] [-h host] [-p prompt] [-u user]
+       sudo -l [-ABkNnS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command [arg ...]]
+       sudo  [-ABbEHnPS]  [-C num] [-D directory] [-g group] [-h host] [-p prompt] [-R directory] [-r role] [-t type]
+            [-T timeout] [-u user] [VAR=value] [-i | -s] [command [arg ...]]
+       sudoedit [-ABkNnS] [-C num] [-D directory] [-g group] [-h host] [-p prompt] [-R directory] [-r role] [-t type]
+            [-T timeout] [-u user] file ...
+
+DESCRIPTION
+       sudo allows a permitted user to execute a command as the superuser or another user, as specified by the  secu‐
+       rity  policy.   The invoking user's real (not effective) user-ID is used to determine the user name with which
+       to query the security policy.
+...
+```
+
+## 📜Grep
+
+**Definice:**
+Používá se pro hledání textu v souboru
+
+**Poznámka:**
+Pokud potřebuješ najít text ve velkém souboru nebo jen nechceš otevírat nebo vypisovat soubor a zjistit, jestli se tam něo nachází nebo ne použij grep
+
+**Příklady:**
+Potřebuješ zjistit kde se nachází "Ahoj kamaráde" v souboru zprava.tt
+```bash
+root@rasberrypi:/home/user$ grep "Ahoj kamaráde" zprava.txt
+**vyppíše kde se "Ahoj kamaráde" nachází**
 ```
