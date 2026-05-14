@@ -350,7 +350,7 @@ root@rasberrypi:/home/user$ history
   ....
 ```
 
-## 📜MAN
+## 📜man
 
 **Definice:**
 Používá se pro zobrazení dokumentace příkazu
@@ -381,7 +381,7 @@ DESCRIPTION
 ...
 ```
 
-## 📜Grep
+## 📜grep
 
 **Definice:**
 Používá se pro hledání textu v souboru
@@ -390,8 +390,23 @@ Používá se pro hledání textu v souboru
 Pokud potřebuješ najít text ve velkém souboru nebo jen nechceš otevírat nebo vypisovat soubor a zjistit, jestli se tam něo nachází nebo ne použij grep
 
 **Příklady:**
-Potřebuješ zjistit kde se nachází "Ahoj kamaráde" v souboru zprava.tt
+Potřebuješ zjistit kde se nachází "Ahoj kamaráde" v souboru zprava.txt
 ```bash
 root@rasberrypi:/home/user$ grep "Ahoj kamaráde" zprava.txt
 **vyppíše kde se "Ahoj kamaráde" nachází**
+```
+
+## 🪪id
+
+**Definice:**
+Používá se pro zjískání informací o aktuálním uživateli systému
+
+**Poznámka:**
+Pokud potřebuješ zjistit detailní informace o aktuálním uživateli systému, použij tento příkaz a dozvíš se více než by jsi potřeboval
+
+**Příklady:**
+Potřebuješ zjistit aktuální informace o uživateli
+```bash
+root@rasberrypi:/home/user$ id
+uid=1000(ed) gid=1000(ed) groups=1000(ed),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users)    **např.
 ```
