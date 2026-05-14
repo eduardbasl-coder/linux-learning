@@ -519,3 +519,32 @@ root@rasberrypi:/home/user$ ps aux
   polkitd      912  0.0  0.0 308164  7680 ?        Ssl  20:49   0:00 /usr/lib/polkit-1/polkitd --no-debug
   ed          1119  0.0  0.0   8280  4224 pts/0    R+   21:11   0:00 ps aux
 ```
+
+## 💿df -h
+
+**Definice:**
+Používá se pro zobrazení místa na disku
+
+**Poznámka:**
+Pokud potřebuješ zjistit místo na disku, použij tento příkaz
+**Příklady:**
+Potřebuješ zjistit volné místo na disku
+```bash
+root@rasberrypi:/home/user$ df -h
+
+  Filesystem      Size  Used Avail Use% Mounted on
+  none            7.7G     0  7.7G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+  none            7.7G  4.0K  7.7G   1% /mnt/wsl
+  drivers         932G  275G  658G  30% /usr/lib/wsl/drivers
+  /dev/sdd       1007G  3.0G  953G   1% /
+  none            7.7G   80K  7.7G   1% /mnt/wslg
+  none            7.7G     0  7.7G   0% /usr/lib/wsl/lib
+  rootfs          7.7G  2.7M  7.7G   1% /init
+  none            7.7G  508K  7.7G   1% /run
+  none            7.7G     0  7.7G   0% /run/lock
+  none            7.7G     0  7.7G   0% /run/shm
+  none            7.7G   76K  7.7G   1% /mnt/wslg/versions.txt
+  none            7.7G   76K  7.7G   1% /mnt/wslg/doc
+  C:\             932G  275G  658G  30% /mnt/c
+  tmpfs           1.6G   20K  1.6G   1% /run/user/1000
+```
