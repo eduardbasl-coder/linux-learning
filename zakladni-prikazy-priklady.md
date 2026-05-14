@@ -426,7 +426,7 @@ root@rasberrypi:/home/user$ whoami
 ed
 ```
 
-## 📈top
+## 📉top
 
 **Definice:**
 Používá se pro zobrazení aktuálně běžících procesů
@@ -463,4 +463,20 @@ root@rasberrypi:/home/user$ top
     490 root      20   0    3140   1164   1024 S   0.0   0.0   0:00.03 Relay(493)
     493 ed        20   0    6204   5248   3584 S   0.0   0.0   0:00.02 bash
     912 polkitd   20   0  308164   7680   6912 S   0.0   0.0   0:00.05 polkitd
+```
+
+## 📈htop
+
+**Definice:**
+Používá se pro zobrazení aktuálně běžících procesů (vylepšená verze top)
+
+**Poznámka:**
+Pokud potřebuješ zjistit aktuálně běžící procesy na pozadí použij tento příkaz (vylepšená verze top)
+Možná bude potřeba nainstalovat přes: sudo apt install htop
+
+**Příklady:**
+Potřebuješ zjistit aktuálně běžící procesy v lepším grafickém prostředí
+```bash
+root@rasberrypi:/home/user$ htop
+**zkus sám a uvidíš**
 ```
