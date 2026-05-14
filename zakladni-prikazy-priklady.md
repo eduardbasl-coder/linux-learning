@@ -480,3 +480,42 @@ Potřebuješ zjistit aktuálně běžící procesy v lepším grafickém prostř
 root@rasberrypi:/home/user$ htop
 **zkus sám a uvidíš**
 ```
+
+## 📊ps aux
+
+**Definice:**
+Používá se pro automatické vypsání běžících procesů do terminálu
+
+**Poznámka:**
+Pokud potřebuješ vypsat do terminálu aktuálně běžící procesy na pozadí použij tento příkaz
+
+**Příklady:**
+Potřebuješ vypsat aktuálně běžící procesy do terminálu
+```bash
+root@rasberrypi:/home/user$ ps aux
+  USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+  root           1  0.0  0.0  21864 12276 ?        Ss   20:36   0:00 /sbin/init
+  root           2  0.0  0.0   3120  2048 ?        Sl   20:36   0:00 /init
+  root           6  0.0  0.0   3120  1792 ?        Sl   20:36   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8
+  root          39  0.0  0.0  50436 15488 ?        S<s  20:36   0:00 /usr/lib/systemd/systemd-journald
+  root          89  0.0  0.0  25412  6272 ?        Ss   20:36   0:00 /usr/lib/systemd/systemd-udevd
+  systemd+     141  0.0  0.0  21460 12800 ?        Ss   20:36   0:00 /usr/lib/systemd/systemd-resolved
+  systemd+     144  0.0  0.0  91028  7424 ?        Ssl  20:36   0:00 /usr/lib/systemd/systemd-timesyncd
+  root         157  0.0  0.0   4236  2560 ?        Ss   20:36   0:00 /usr/sbin/cron -f -P
+  message+     158  0.0  0.0   9636  4608 ?        Ss   20:36   0:00 @dbus-daemon --system --address=systemd: --nofork --n
+  root         162  0.0  0.2 269528 39236 ?        Ss   20:36   0:00 /usr/bin/python3 /usr/bin/glances -s -B 127.0.0.1
+  root         170  0.0  0.0  17968  8192 ?        Ss   20:36   0:00 /usr/lib/systemd/systemd-logind
+  root         180  0.0  0.0   3160  2048 hvc0     Ss+  20:36   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 1152
+  syslog       190  0.0  0.0 222508  5376 ?        Ssl  20:36   0:00 /usr/sbin/rsyslogd -n -iNONE
+  root         204  0.0  0.0   3116  1920 tty1     Ss+  20:36   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  root         211  0.0  0.1 107012 21888 ?        Ssl  20:36   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unatt
+  root         304  0.0  0.0   6824  4352 pts/1    Ss   20:36   0:00 /bin/login -f
+  ed           360  0.0  0.0  20108 11008 ?        Ss   20:36   0:00 /usr/lib/systemd/systemd --user
+  ed           361  0.0  0.0  21156  3516 ?        S    20:36   0:00 (sd-pam)
+  ed           387  0.0  0.0   6072  4992 pts/1    S+   20:36   0:00 -bash
+  root         489  0.0  0.0   3124   904 ?        Ss   20:37   0:00 /init
+  root         490  0.0  0.0   3140  1164 ?        S    20:37   0:00 /init
+  ed           493  0.0  0.0   6204  5248 pts/0    Ss   20:37   0:00 -bash
+  polkitd      912  0.0  0.0 308164  7680 ?        Ssl  20:49   0:00 /usr/lib/polkit-1/polkitd --no-debug
+  ed          1119  0.0  0.0   8280  4224 pts/0    R+   21:11   0:00 ps aux
+```
