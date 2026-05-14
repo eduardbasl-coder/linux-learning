@@ -426,3 +426,41 @@ root@rasberrypi:/home/user$ whoami
 ed
 ```
 
+## 📈top
+
+**Definice:**
+Používá se pro zobrazení aktuálně běžících procesů
+
+**Poznámka:**
+Pokud potřebuješ zjistit aktuálně běžící procesy na pozadí použij tento příkaz
+
+**Příklady:**
+Potřebuješ zjistit aktuálně běžící procesy
+```bash
+root@rasberrypi:/home/user$ top
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   21864  12276   9204 S   0.0   0.1   0:00.56 systemd
+      2 root      20   0    3120   2048   1920 S   0.0   0.0   0:00.00 init-systemd(Ub
+      6 root      20   0    3120   1792   1792 S   0.0   0.0   0:00.00 init
+     39 root      19  -1   50436  15488  14720 S   0.0   0.1   0:00.16 systemd-journal
+     89 root      20   0   25412   6272   4864 S   0.0   0.0   0:00.13 systemd-udevd
+    141 systemd+  20   0   21460  12800  10624 S   0.0   0.1   0:00.11 systemd-resolve
+    144 systemd+  20   0   91028   7424   6656 S   0.0   0.0   0:00.09 systemd-timesyn
+    157 root      20   0    4236   2560   2432 S   0.0   0.0   0:00.00 cron
+    158 message+  20   0    9636   4608   4224 S   0.0   0.0   0:00.09 dbus-daemon
+    162 root      20   0  269528  39236  12800 S   0.0   0.2   0:00.36 glances
+    170 root      20   0   17968   8192   7424 S   0.0   0.1   0:00.06 systemd-logind
+    180 root      20   0    3160   2048   1920 S   0.0   0.0   0:00.00 agetty
+    190 syslog    20   0  222508   5376   4480 S   0.0   0.0   0:00.05 rsyslogd
+    204 root      20   0    3116   1920   1792 S   0.0   0.0   0:00.00 agetty
+    211 root      20   0  107012  21888  12928 S   0.0   0.1   0:00.13 unattended-upgr
+    304 root      20   0    6824   4352   3712 S   0.0   0.0   0:00.01 login
+    360 ed        20   0   20108  11008   9216 S   0.0   0.1   0:00.11 systemd
+    361 ed        20   0   21156   3516   1792 S   0.0   0.0   0:00.00 (sd-pam)
+    387 ed        20   0    6072   4992   3456 S   0.0   0.0   0:00.01 bash
+    489 root      20   0    3124    904    768 S   0.0   0.0   0:00.00 SessionLeader
+    490 root      20   0    3140   1164   1024 S   0.0   0.0   0:00.03 Relay(493)
+    493 ed        20   0    6204   5248   3584 S   0.0   0.0   0:00.02 bash
+    912 polkitd   20   0  308164   7680   6912 S   0.0   0.0   0:00.05 polkitd
+```
