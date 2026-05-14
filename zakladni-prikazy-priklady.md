@@ -527,6 +527,7 @@ Používá se pro zobrazení místa na disku
 
 **Poznámka:**
 Pokud potřebuješ zjistit místo na disku, použij tento příkaz
+
 **Příklady:**
 Potřebuješ zjistit volné místo na disku
 ```bash
